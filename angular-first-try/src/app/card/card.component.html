@@ -1,5 +1,8 @@
 <div class="card">
-    <h2>{{h2}}</h2>
+    <h2 [ngStyle]="{
+        color: h2.length <7 ?'red':'blue',
+        fontWeight: h2.length <3 ?'bold':'normal'
+    }">{{h2}}</h2>
     <p>{{text}}</p>
     <!-- <strong>Number: {{num}}</strong>
     <em>{{array}}</em> -->
@@ -24,7 +27,10 @@
         <button (click)="h2='what what in the but'">Change h2(1)</button>
     </div>
 
-    <div>
-        <input type="text" (input)="inputHendler()">
-    </div>
+    <!-- <div> -->
+    <!-- <input type="text" (input)="inputHendler($event)" [value]="h2"> -->
+    <!-- <input type="text" #myInput (input)="inputHendler(myInput.value)" [value]="h2"> -->
+    <!-- </div> -->
+
+    <div><input type="text" [(ngModel)]="h2" (ngModelChange)="changeHendler()"></div>
 </div>

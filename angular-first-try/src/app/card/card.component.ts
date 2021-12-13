@@ -43,7 +43,13 @@ export class CardComponent implements OnInit {
         this.h2 = `changes`
     }
 
-    inputHendler(event: any) {
-        console.log(event)
+    inputHendler(value: any) {
+        // console.log(event)
+        // const value = event.target.value;
+        this.h2 = value
+    }
+
+    changeHendler() {
+        console.log(this.h2)
     }
 }
