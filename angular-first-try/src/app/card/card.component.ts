@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+// ng g c form --skipTests
 @Component({
     selector: 'app-card',
     templateUrl: './card.component.html',

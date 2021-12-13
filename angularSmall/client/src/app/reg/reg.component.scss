@@ -1,0 +1,15 @@
+.reg {
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: 2% auto;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    margin: 2% 0%;
+    padding: 1% 3%;
+  }
+}
