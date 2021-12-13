@@ -4,6 +4,15 @@ import { map, catchError, retry } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 // import { catchError, retry } from 'rxjs/operators';
 
+
+
+
+// https://angular.io/guide/http
+
+
+
+
+
 @Injectable({
   providedIn: 'root'
 })
