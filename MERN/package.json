@@ -4,6 +4,8 @@
   "description": "fullstack app with angular, nodejs and mongodb",
   "main": "index.js",
   "scripts": {
+    "start": "node index",
+    "serve": "nodemon index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
