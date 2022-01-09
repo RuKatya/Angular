@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 5% 2.5%;
+  // background-color: wheat;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+button {
+  background-color: transparent; //שקיפות
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: violet;
+
+    &__hamburger {
+        position: relative;
+        // background-color: turquoise;
+        padding: 0% 2%;
+
+        >button {
+            // font-size: 5rem;
+        }
+
+        nav {
+            display: none;
+            position: absolute;
+            background-color: rgba(231, 251, 253, 0.7);
+            border-radius: 0.5rem;
+
+            li {
+                padding: 0.4rem 1.5rem;
+
+                >a {
+                    color: black;
+
+                    &:hover {
+                        color: rgb(0, 110, 255);
+                    }
+                }
+            }
+        }
+
+        &:hover nav {
+            display: block;
+        }
+    }
+
+    &__profile {
+        width: 50px;
+
+        button {}
+
+        img {
+            width: 100%;
+            border: 1px solid grey;
+            border-radius: 50%;
+        }
+    }
+}
